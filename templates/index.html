@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Convertisseur PDF vers Word</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+    <h1>Convertion de fichier</h1>
+    <form action="/convert" method="post" enctype="multipart/form-data">
+        <h2>Convertir PDF-to-Word</h2>
+        <input type="file" name="file">
+        <input type="submit" value="Convert">
+    </form>
+    <form action="/convert_word" method="post" enctype="multipart/form-data">
+        <h2>Convertir Word-to-PDF</h2>
+        <input type="file" name="word_file"><br>
+        <input type="submit" value="Convertir en PDF">
+    </form>
+    
+   
+    
+</body>
+</html>
